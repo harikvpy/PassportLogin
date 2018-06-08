@@ -8,6 +8,11 @@ using one of the Hello authentication methods. If Windows Hello is not installed
 application will revert to traditional login using username and password. A message will also be
 displayed that Passport login is disabled as it's not available.
 
+This project is different from the Windows Hello sample code in the various projects under
+https://github.com/Microsoft/Windows-universal-samples.git in that, it does not require a separate
+server process to be launched. Instead this project incorporates a mock server that stores user
+particulars in an in-memory database.
+
 ## Login Details
 
 Username and password are hardcoded in the code and the backend authentication is done through a
@@ -25,6 +30,8 @@ the registration details are not preserved across application run sessions.
  - Visual Studio 2017 Community Edition or above
  - C# development environment
 
-## Seel also
+## References
+The project code is based on snippets in the following tutorial.
+
  - https://docs.microsoft.com/en-us/windows/uwp/security/microsoft-passport-login
  - https://docs.microsoft.com/en-us/windows/uwp/security/microsoft-passport-login-auth-service
